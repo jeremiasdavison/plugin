@@ -1,0 +1,11 @@
+---
+description: Run the project's linters, type checks and tests before declaring a task done
+alwaysApply: true
+---
+
+Before you say a task is finished:
+
+- Run the project's own lint, type-check and test commands (look in `package.json`, `pyproject.toml`, `Makefile`, CI config). Do not invent commands.
+- Fix every error your change introduced. Never silence a rule (`eslint-disable`, `# noqa`, `@ts-ignore`) to get green; if a rule is wrong, say so and propose changing the rule.
+- Report what you ran and the result. If something could not be run, say that explicitly instead of implying it passed.
+- If the same kind of mistake keeps happening, stop and use the `harden-from-mistake` skill: turn it into an enforceable check rather than a note.

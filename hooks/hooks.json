@@ -1,0 +1,9 @@
+{
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "node ./scripts/lint-changed.mjs"
+      }
+    ]
+  }
+}

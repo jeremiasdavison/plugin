@@ -1,0 +1,16 @@
+---
+description: Attach evidence (test output, screenshots, specs) to changes that are sent for review
+alwaysApply: false
+globs:
+  - "**/*"
+---
+
+When preparing a change for review, do not ask a human to trust the diff. Provide evidence proportional to the risk:
+
+- **Always:** lint/type/test results, with the exact commands.
+- **UI or behavior change:** the app was run, with screenshots or a short recording of the changed flow.
+- **State machines, concurrency, retries:** a spec or model-check result (see the `tla-spec` skill), or a statement of why none applies.
+- **Bug fix:** a test that failed before the fix and passes after.
+- **Not verified:** list it under "Not verified". Never hide gaps.
+
+Use the `/evidence-pr` command to assemble this.

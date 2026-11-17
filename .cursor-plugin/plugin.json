@@ -1,0 +1,11 @@
+{
+  "name": "verify-kit",
+  "displayName": "Verify Kit",
+  "version": "0.1.0",
+  "description": "Make agent-written code earn trust: lint rules born from mistakes, architecture constraints, code review with evidence, evaluators (LLM judges) and optional TLA+ specs.",
+  "author": {
+    "name": "verify-kit contributors"
+  },
+  "license": "MIT",
+  "keywords": ["verification", "lint", "code-review", "evals", "tla+", "formal-methods", "testing", "agents"]
+}

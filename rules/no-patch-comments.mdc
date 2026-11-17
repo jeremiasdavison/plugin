@@ -1,0 +1,10 @@
+---
+description: Prefer fixing root causes and actionable checks over explanatory comments on workarounds
+alwaysApply: false
+globs:
+  - "**/*.{ts,tsx,js,jsx,py,go,rs,java,cs}"
+---
+
+- Do not add comments that justify a workaround ("hack", "temporary", "for now"). Fix the root cause or open a tracked issue.
+- Comments go stale and give later agents a reason to keep a bad fix. If something needs a rule, encode it as a lint error with an actionable message instead.
+- Keep only comments that state a non-obvious *why* (constraint, invariant, link to a spec) and that would survive a refactor.
